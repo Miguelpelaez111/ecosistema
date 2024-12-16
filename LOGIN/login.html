@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistema de Políticas Públicas - Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_login.CSS">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>UdeA</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h2>Ecosistema de Políticas Públicas</h2>
+                    <h3>Sistema de gestión de la información</h3>
+                    <p>Señor usuario, Ingresa a tu cuenta institucional</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-container">
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" id="email" placeholder="nombre@udea.edu.co" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <div class="input-container">
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        <i class='bx bx-log-in'></i>
+                        Iniciar Sesión
+                    </button>
+
+                    <div class="forgot-password">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-book-open'></i>
+                        <span>Ir a la documentación del Aplicativo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-group'></i>
+                        <span>Contactar al equipo del desarrollo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-data'></i>
+                        <span>Consultar la base de datos</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>Instituto de estudios políticos</p>
+                    <p>© 2024 Universidad de Antioquia</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script_login.js"></script>
+</body>
+</html>

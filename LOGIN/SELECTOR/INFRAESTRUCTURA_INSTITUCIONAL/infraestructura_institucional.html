@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestión de la información - Infraestructura Institucional</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_infraestructura_institucional.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>UdeA</h1>
+                <nav class="nav-buttons">
+                    <button class="nav-btn">
+                        <i class='bx bx-arrow-back'></i>
+                        <span>Volver al Selector</span>
+                    </button>
+                    <button class="nav-btn">
+                        <i class='bx bx-file'></i>
+                        <span>Ir a Reportes</span>
+                    </button>
+                    <button class="nav-btn">
+                        <i class='bx bx-building-house'></i>
+                        <span>Ir a la base de datos</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="info-card">
+                <h2>Infraestructura Institucional</h2>
+                <h3>Ecosistema de políticas públicas</h3>
+                <p>Señor usuario, Por cada elemento, seleccione la opción requerida</p>
+            </div>
+
+            <form id="infrastructureForm">
+                <!-- Section I -->
+                <div class="form-section">
+                    <h3>I. Lineamientos programáticos asociados a la acción</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="instrumento">Instrumento de planeación:</label>
+                            <select id="instrumento" name="instrumento" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="lineaEstrategica">Línea Estratégica:</label>
+                            <select id="lineaEstrategica" name="lineaEstrategica" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="programa">Programa/proyecto/acción:</label>
+                            <select id="programa" name="programa" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="meta">Meta:</label>
+                            <select id="meta" name="meta" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="nombreIndicador">Nombre del Indicador:</label>
+                            <select id="nombreIndicador" name="nombreIndicador" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="tipoIndicador">Tipo de indicador:</label>
+                            <select id="tipoIndicador" name="tipoIndicador" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="responsable">Responsable asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="responsable" name="responsable" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section II -->
+                <div class="form-section">
+                    <h3>II. Institución asociada al nombre del indicador asociado a la acción</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="nombreAsociado">Nombre asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="nombreAsociado" name="nombreAsociado" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="nivelTerritorial">Nivel territorial de la institución asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="nivelTerritorial" name="nivelTerritorial" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="competencia">Competencia asociada asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="competencia" name="competencia" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="instrumento">Instrumento de seguimiento asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="instrumento" name="instrumento" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="lineas">Rutas de atención asociadas asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="lineas" name="lineas" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="acceso">Acceso y manejo de la información asociadas al nombre del Indicador asociado a la acción:</label>
+                            <select id="acceso" name="acceso" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section III -->
+                <div class="form-section">
+                    <h3>III. Coordinación asociada al nombre del Indicador asociado a la acción</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="coordinacionPolitica">Coordinación y articulación dentro de la política a la que se asocia al nombre del Indicador asociado a la acción:</label>
+                            <select id="coordinacionPolitica" name="coordinacionPolitica" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="coordinacionInstancias">Coordinación con las instancias políticas de toma de decisión asociadas al nombre del Indicador asociado a la acción:</label>
+                            <select id="coordinacionInstancias" name="coordinacionInstancias" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="coordinacionRedes">Coordinación con las redes sociales y comunitarias asociadas al nombre del Indicador asociado a la acción:</label>
+                            <select id="coordinacionRedes" name="coordinacionRedes" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="escenarioComunitario">Escenario comunitario o mixto asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="escenarioComunitario" name="escenarioComunitario" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="tipoEscenario">Tipo de escenario asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="tipoEscenario" name="tipoEscenario" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="funciones">Funciones asociadas al resultado asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="funciones" name="funciones" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="responsableSecretaria">Responsable de Secretaría Ejecutiva asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="responsableSecretaria" name="responsableSecretaria" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="actoresGubernamentales">Actores gubernamentales asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="actoresGubernamentales" name="actoresGubernamentales" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="actoresComunitarios">Actores comunitarios asociado al nombre del Indicador asociado a la acción:</label>
+                            <select id="actoresComunitarios" name="actoresComunitarios" required>
+                                <option value="">Seleccione una opción...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="resetBtn" class="button button-reset">
+                        <i class='bx bx-reset'></i>
+                        <span>Limpiar campos</span>
+                    </button>
+                    <button type="submit" class="button button-save">
+                        <i class='bx bx-save'></i>
+                        <span>Guardar Registro</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-book-open'></i>
+                        <span>Ir a la documentación del Aplicativo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-group'></i>
+                        <span>Contactar al equipo del desarrollo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-data'></i>
+                        <span>Consultar la base de datos</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>Instituto de estudios políticos</p>
+                    <p>© 2024 Universidad de Antioquia</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script_infraestructura_institucional.js"></script>
+</body>
+</html>

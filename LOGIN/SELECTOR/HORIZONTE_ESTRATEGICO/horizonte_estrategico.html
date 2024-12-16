@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestión de la información - Infraestructura Social</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_horizonte_estrategico.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>UdeA</h1>
+                <nav class="nav-buttons">
+                    <button class="nav-btn">
+                        <i class='bx bx-arrow-back'></i>
+                        <span>Volver al Selector</span>
+                    </button>
+                    <button class="nav-btn">
+                        <i class='bx bx-file'></i>
+                        <span>Ir a Reportes</span>
+                    </button>
+                    <button class="nav-btn">
+                        <i class='bx bx-building-house'></i>
+                        <span>Ir a la base de datos</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="info-card">
+                <h2>Infraestructura Social</h2>
+                <h3>Ecosistema de políticas públicas</h3>
+                <p>Señor usuario, Por cada elemento, seleccione la opción requerida</p>
+            </div>
+
+            <form id="strategicForm">
+                <!-- Contenedor 1: Horizonte estratégico -->
+                <div class="form-section">
+                    <h3>I. Horizonte estratégico</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="linea">Línea:</label>
+                            <select id="linea" name="linea" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Desarrollo urbano y ordenamiento territorial para la paz</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="objetivodelinea">Objetivo de línea:</label>
+                            <select id="objetivodelinea" name="Objetivodelinea" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Promover el desarrollo urbano y el ordenamiento territorial como pilares de construcción de paz, mediante la implementación de estrategias integrales que garanticen el acceso equitativo a la vivienda digna, la reparación territorial y comunitaria, el fortalecimiento de la memoria colectiva y los espacios culturales, la participación activa de las comunidades y víctimas en la planificación y gestión del territorio, y la adopción de medidas sostenibles de mitigación del riesgo, resiliencia y adaptación al cambio climático, fomentando la inclusión, el arraigo y la justicia social.</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="Apuestas">Apuestas de las líneas estratégicas:</label>
+                            <select id="Apuestas" name="Apuestas" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">SD</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="nucleos">Núcleos temáticos:</label>
+                            <select id="nucleos" name="nucleos" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Reconocimiento del Mejoramiento Integral de Barrios y la Vivienda como Instrumentos de Reparación Territorial</option>
+                                <option value="2">Reconocimiento de la Cultura Popular Viva y Cambiante</option>
+                                <option value="3">Participación de la Comunidad y las Víctimas</option>
+                                <option value="4">Articulación de la Planeación Territorial Comunitaria con el Mejoramiento Integral</option>
+                                <option value="5">Reconocimiento de los Lugares de Memoria para Integrarlos como Centralidades Barriales</option>
+                                <option value="6">Protección y Fortalecimiento de Lugares Culturales, Comunitarios y de Memoria</option>
+                                <option value="7">Mejoramiento Integral para la Reparación del Daño Territorial, Comunitario y Colectivo</option>
+                                <option value="8">Fortalecimiento de la Organización Comunitaria</option>
+                                <option value="9">Defensa de la Permanencia en el Territorio</option>
+                                <option value="10">Gestión, Mitigación del Riesgo y Adaptación al Cambio Climático</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="objetivonucleo">Objetivos del nucleo tematico:</label>
+                            <select id="objetivonucleo" name="objetivonucleo" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Promover el acceso a una vivienda digna en territorios victimizados mediante la participación activa de las comunidades y las víctimas en acciones de mejoramiento barrial, identificando y potenciando iniciativas comunitarias que contribuyan a la implementación de medidas restaurativas integrales.</option>
+                                <option value="2">Reconocer y fortalecer la cultura popular viva y cambiante mediante la garantía de vivienda digna en territorios victimizados, promoviendo la participación activa de la comunidad y las víctimas en acciones de mejoramiento barrial, e identificando iniciativas comunitarias con potencial para la implementación de medidas restaurativas que contribuyan al tejido social y cultural.</option>
+                                <option value="3">Fortalecer la participación de la comunidad y las víctimas mediante la reconstrucción del potencial histórico de las organizaciones sociales y comunitarias, promoviendo su implicación activa en procesos de planeación y toma de decisiones a nivel barrial, comunal, zonal y de ciudad, y garantizando la continuidad de su participación en acciones restaurativas que contribuyan a la reparación y justicia social.</option>
+                                <option value="4">Promover la articulación de la planeación territorial comunitaria con el mejoramiento integral de barrios mediante la integración de prácticas, conocimientos y formas de organización de víctimas y comunidades en la planificación y ejecución de proyectos MIB, garantizando el acceso a planes integrales de desarrollo urbano para víctimas y territorios afectados por el conflicto, y asegurando un diseño que incorpore las dinámicas del territorio barrial.</option>
+                                <option value="5">Reconocer y fortalecer los lugares comunitarios de memoria como centralidades barriales para la memoria, la cultura y la pedagogía, mediante su integración en planes de legalización y regularización urbanística, y la generación de condiciones para implementar medidas restaurativas con la participación activa de víctimas, comunidades, firmantes y el Estado.</option>
+                                <option value="6">Potenciar y proteger los lugares comunitarios de memoria como espacios de sanación, reparación y resistencia, reclamándolos como bienes comunitarios materiales e inmateriales, y garantizando su función como espacios culturales, legado y patrimonio comunitario que fortalezcan el tejido social.</option>
+                                <option value="7">Identificar los tipos de daños colectivos, comunitarios y territoriales asociados a las brechas socioeconómicas, reconociendo las prácticas de autoreparación con potencial restaurativo en organizaciones, comunidades y territorios barriales, y articulando políticas e instituciones del orden local y nacional con competencias en la reparación de los daños, integrando las agendas comunitarias para garantizar un mejoramiento integral inclusivo.</option>
+                                <option value="8">Fortalecer el liderazgo y la organización social, comunitaria y de víctimas sobrevivientes como pilares restaurativos, potenciando la reconstrucción del tejido social mediante el reconocimiento de las afectaciones comunitarias e integrando agendas locales en la normatividad y las políticas públicas para promover la cohesión y la justicia social.</option>
+                                <option value="9">Fortalecer la permanencia en el territorio mediante la promoción de la resistencia civil y comunitaria, el reconocimiento de prácticas de autoreparación, autogestión e integración local de facto de víctimas sobrevivientes, y la ampliación de la construcción de lo común vinculada a la recomposición de sujetos y el arraigo comunitario.</option>
+                                <option value="10">Definir la gestión del riesgo como un instrumento de reparación territorial para víctimas y comunidades, promoviendo medidas de prevención, mitigación de desastres y adaptación al cambio climático, y ampliando su alcance mediante el mejoramiento barrial y el derecho a la ciudad como ejes fundamentales.</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="acciones">Acciones:</label>
+                            <select id="acciones" name="acciones" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Realizar y actualizar censos de borde, priorización para generar indicadores a escala de ciudad.</option>
+                                <option value="2">Incidencia en los PDL con enfoque de paz. Encadenamiento de instrumentos de largo plazo de PDL – POT.</option>
+                                <option value="3">Generación de escenarios de participación y concertación pública que integren el enfoque de víctimas y prioricen los territorios populares.</option>
+                                <option value="4">Incidencia en los diferentes ejercicios de planeación multiescalar.</option>
+                                <option value="5">Acciones diseñadas de manera participativa para la reparación mediante obras de bien comunitario, ambientales y de educación en los territorios afectados por el conflicto.</option>
+                                <option value="6">Participación de las comunidades en la identificación y ejecución de medidas restaurativas.</option>
+                                <option value="7">Recuperación de saberes previos de los participantes, activando el diálogo a partir de la experiencia de vida.</option>
+                                <option value="8">Promoción de la participación activa de los habitantes para fortalecer la identidad y la permanencia en el lugar.</option>
+                                <option value="9">Autoorganización de las comunidades afectadas y reconstrucción del tejido social y comunitario.</option>
+                                <option value="10">Participación de las comunidades afectadas en la toma de decisiones sobre su territorio.</option>
+                                <option value="11">Reconocer el potencial histórico de las organizaciones como una forma de justicia restaurativa con las comunidades sobrevivientes.</option>
+                                <option value="12">Participación activa de las comunidades afectadas, organizaciones de víctimas sobrevivientes y comparecientes en los procesos de implementación de medidas restaurativas.</option>
+                                <option value="13">Trabajos, Obras o Acciones con contenido Restaurador (TOAR), con la participación de las comunidades urbanas en la Jurisdicción Especial para la Paz.</option>
+                                <option value="14">Recoger la experiencia y conocimientos de las víctimas y comunidades en la planificación y ejecución de proyectos MIB en todas las etapas del proceso.</option>
+                                <option value="15">Revisión y renovación del plan local de desarrollo para incorporar un enfoque de Paz Territorial e integración local.</option>
+                                <option value="16">Formulación de una nueva generación de planes locales a nivel barrial con enfoque de paz, reparación territorial y derecho a la ciudad.</option>
+                                <option value="17">Medidas que garanticen el acceso de la población de territorios altamente afectados y víctimas a programas integrales de desarrollo urbano.</option>
+                                <option value="18">Resaltar la acción pedagógica, cultural y generacional de los lugares de memoria como potencial restaurativo.</option>
+                                <option value="19">Proponer declaratorias/instrumentos de espacios públicos restaurativos.</option>
+                                <option value="20">Estrategia de Pedagogías, Memoria e Investigación, ejercicios de construcción de memorias colectivas y el diseño de escuelas populares territoriales como expresiones de investigación y formación.</option>
+                                <option value="21">Identificación + arrendamiento + protección + legalización + mejoramiento de lugares de memoria.</option>
+                                <option value="22">Fortalecerlos como epicentros para la implementación de medidas restaurativas.</option>
+                                <option value="23">Identificarlos y caracterizarlos mediante ejercicios colaborativos, toma de coordenadas y diligenciamiento de fichas de testimonios.</option>
+                                <option value="24">Destacar su potencial pedagógico, cultural y generacional al acoger en sus procesos a niños, jóvenes y adultos.</option>
+                                <option value="25">Reconocimiento del daño colectivo, social, político y ambiental generado por el conflicto en los territorios y articulación con las acciones autoreparadoras de facto.</option>
+                                <option value="26">Señalar la superposición de conflicto, violencia urbana, violencias basadas en género, empobrecimiento y reproducción de desigualdades que afectó tanto a las víctimas sobrevivientes como a los barrios populares de Medellín.</option>
+                                <option value="27">Identificar el repertorio de recuperación, autoreparación e integración local de facto, que incluye la autoorganización, la autoconstrucción popular de territorio articulada a las luchas por lo común, y la participación activa.</option>
+                                <option value="28">Acciones autónomas como Casa Linda en Bello Oriente.</option>
+                                <option value="29">Respaldar de manera decidida los acuerdos de paz y avanzar en la búsqueda del diálogo con los demás actores que han participado del conflicto.</option>
+                                <option value="30">Formular una metodología de priorización territorial para la implementación de la política pública de reparación y paz territorial con enfoque diferencial.</option>
+                                <option value="31">Reconocer la lucha por la permanencia en el territorio como un proceso de resistencia civil por el derecho a hacer parte de la ciudad.</option>
+                                <option value="32">Repertorios de autoorganización, autoconstrucción popular de territorio articulada a las luchas por lo común, por la memoria y la verdad.</option>
+                                <option value="33">Articulación de las acciones restaurativas con los procesos autoreparadores de facto que por autogestión se han generado desde las comunidades.</option>
+                                <option value="34">Luchas por la construcción de bienes comunes urbanos, la cultura popular como mezcla de identidades, la construcción colectiva de lo público y de paz desde las experiencias comunitarias.</option>
+                                <option value="35">Reconocimiento de las capacidades de la comunidad para gestionar e implementar las estrategias de protección ambiental.</option>
+                                <option value="36">Asociar la gestión del riesgo con las reivindicaciones y luchas de las víctimas sobrevivientes en la conformación de territorios populares.</option>
+                                <option value="37">Reforestación, recuperación de suelos y cuidado medioambiental (Bello Oriente y La Honda).</option>
+                                <option value="38">Cuidado del bosque premontano. Plan de Desarrollo Barrial de Bello Oriente.</option>
+                                <option value="39">Convites comunitarios de paz para atender el riesgo en asentamientos populares.</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="indicador">Indicador de producto Nombre:</label>
+                            <select id="indicador" name="indicador" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Porcentaje de censos realizados y actualizados respecto a los programados.</option>
+                                <option value="2">Porcentaje de instrumentos de planeación vinculados entre PDL y POT.</option>
+                                <option value="3">Número de escenarios de participación generados con integración del enfoque de víctimas.</option>
+                                <option value="4">Porcentaje de ejercicios de planeación multiescalar influenciados por el proyecto.</option>
+                                <option value="5">Número de acciones participativas diseñadas para la reparación en territorios afectados.</option>
+                                <option value="6">Porcentaje de medidas restaurativas identificadas y ejecutadas con participación comunitaria.</option>
+                                <option value="7">Porcentaje de participantes que han recuperado saberes previos y participado en sesiones de diálogo.</option>
+                                <option value="8">Número de actividades realizadas para promover la participación activa de los habitantes.</option>
+                                <option value="9">Porcentaje de comunidades que han implementado mecanismos de autoorganización y acciones de reconstrucción social.</option>
+                                <option value="10">Porcentaje de decisiones territoriales tomadas con participación activa de las comunidades afectadas.</option>
+                                <option value="11">Porcentaje de organizaciones reconocidas por su potencial histórico en procesos de justicia restaurativa.</option>
+                                <option value="12">Porcentaje de medidas restaurativas implementadas con participación activa de comunidades, organizaciones de víctimas y comparecientes.</option>
+                                <option value="13">Número de Trabajos, Obras o Acciones con contenido restaurador realizados con participación comunitaria.</option>
+                                <option value="14">Porcentaje de proyectos MIB que incorporan experiencias y conocimientos de víctimas y comunidades.</option>
+                                <option value="15">Porcentaje del plan local de desarrollo revisado y renovado con enfoque de Paz Territorial.</option>
+                                <option value="16">Número de nuevos planes locales formulados con enfoque de paz y reparación territorial.</option>
+                                <option value="17">Porcentaje de medidas implementadas que garantizan el acceso a programas integrales de desarrollo urbano.</option>
+                                <option value="18">Número de actividades pedagógicas, culturales y generacionales realizadas en los lugares de memoria.</option>
+                                <option value="19">Número de declaratorias o instrumentos propuestos para espacios públicos restaurativos.</option>
+                                <option value="20">Número de ejercicios de construcción de memoria colectiva y escuelas populares territoriales diseñadas.</option>
+                                <option value="21">Porcentaje de lugares de memoria identificados y mejorados en relación con los programados.</option>
+                                <option value="22">Número de lugares de memoria fortalecidos como epicentros restaurativos.</option>
+                                <option value="23">Porcentaje de lugares de memoria caracterizados mediante ejercicios colaborativos y fichas de testimonios.</option>
+                                <option value="24">Número de actividades pedagógicas, culturales y generacionales realizadas en los lugares de memoria.</option>
+                                <option value="25">Porcentaje de territorios afectados reconocidos formalmente por los daños colectivos y articulados con acciones autoreparadoras.</option>
+                                <option value="26">Número de estudios o diagnósticos realizados sobre la superposición de conflictos y desigualdades en los barrios populares.</option>
+                                <option value="27">Porcentaje de repertorios de recuperación, autoreparación e integración local identificados y documentados.</option>
+                                <option value="28">Número de acciones autónomas implementadas en territorios como Bello Oriente.</option>
+                                <option value="29">Número de actividades realizadas en apoyo a los acuerdos de paz y en promoción del diálogo.</option>
+                                <option value="30">Metodología de priorización territorial formulada y validada.</option>
+                                <option value="31">Número de territorios donde se han reconocido formalmente procesos de resistencia civil por el derecho a la ciudad.</option>
+                                <option value="32">Número de repertorios de autoorganización y autoconstrucción documentados.</option>
+                                <option value="33">Porcentaje de acciones restaurativas articuladas con procesos autoreparadores comunitarios.</option>
+                                <option value="34">Número de proyectos comunitarios orientados a la construcción de bienes comunes urbanos y fortalecimiento de la cultura popular.</option>
+                                <option value="35">Porcentaje de comunidades con capacidades reconocidas para gestionar estrategias de protección ambiental.</option>
+                                <option value="36">Número de territorios donde la gestión del riesgo está asociada a reivindicaciones de víctimas sobrevivientes.</option>
+                                <option value="37">Porcentaje de áreas reforestadas y suelos recuperados respecto a la meta planificada.</option>
+                                <option value="38">Porcentaje de acciones implementadas en el cuidado del bosque premontano según el Plan de Desarrollo Barrial.</option>
+                                <option value="39">Número de convites comunitarios realizados para la gestión del riesgo en asentamientos populares.</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="indicadorformula">Indicador de producto Formula de calculo:</label>
+                            <select id="indicadorformula" name="indicadorformula" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">(Número de censos realizados y actualizados / Número total de censos programados) × 100</option>
+                                <option value="2">(Número de instrumentos vinculados entre PDL y POT / Número total de instrumentos planeados) × 100</option>
+                                <option value="3">Cantidad total de escenarios de participación realizados</option>
+                                <option value="4">(Número de ejercicios de planeación influenciados / Número total de ejercicios realizados) × 100</option>
+                                <option value="5">Cantidad total de acciones participativas realizadas</option>
+                                <option value="6">(Número de medidas identificadas y ejecutadas con participación / Número total de medidas planeadas) × 100</option>
+                                <option value="7">(Número de participantes que han recuperado saberes y participado / Número total de participantes previstos) × 100</option>
+                                <option value="8">Cantidad total de actividades documentadas y realizadas para fortalecer la participación</option>
+                                <option value="9">(Número de comunidades organizadas y con acciones de reconstrucción / Número total de comunidades afectadas) × 100</option>
+                                <option value="10">(Número de decisiones tomadas con participación comunitaria / Número total de decisiones territoriales previstas) × 100</option>
+                                <option value="11">(Número de organizaciones reconocidas formalmente / Número total de organizaciones identificadas) × 100</option>
+                                <option value="12">(Número de medidas restaurativas con participación activa / Número total de medidas implementadas) × 100</option>
+                                <option value="13">Cantidad total de trabajos, obras o acciones restauradoras ejecutadas</option>
+                                <option value="14">(Número de proyectos MIB con participación comunitaria / Número total de proyectos MIB ejecutados) × 100</option>
+                                <option value="15">(Número de componentes del plan revisados y renovados / Número total de componentes del plan) × 100</option>
+                                <option value="16">Cantidad total de planes locales formulados con enfoque de paz</option>
+                                <option value="17">(Número de medidas implementadas efectivamente / Número total de medidas planeadas) × 100</option>
+                                <option value="18">Cantidad total de actividades documentadas y ejecutadas en los lugares de memoria</option>
+                                <option value="19">Cantidad total de propuestas documentadas y presentadas</option>
+                                <option value="20">Cantidad total de ejercicios de memoria y escuelas populares documentadas</option>
+                                <option value="21">(Número de lugares identificados, protegidos y mejorados / Número total de lugares programados) × 100</option>
+                                <option value="22">Cantidad total de lugares de memoria documentados como epicentros restaurativos</option>
+                                <option value="23">(Número de lugares caracterizados / Número total de lugares identificados) × 100</option>
+                                <option value="24">Cantidad total de actividades documentadas en los lugares de memoria</option>
+                                <option value="25">(Número de territorios reconocidos y articulados / Número total de territorios identificados) × 100</option>
+                                <option value="26">Cantidad total de diagnósticos o estudios documentados</option>
+                                <option value="27">(Número de repertorios identificados y documentados / Número total de repertorios previstos) × 100</option>
+                                <option value="28">Cantidad total de acciones autónomas documentadas y ejecutadas</option>
+                                <option value="29">Cantidad total de actividades documentadas en respaldo a los acuerdos y el diálogo</option>
+                                <option value="30">(Número de etapas completadas en la formulación de la metodología / Número total de etapas planeadas) × 100</option>
+                                <option value="31">Cantidad total de territorios documentados con procesos de resistencia reconocidos</option>
+                                <option value="32">Cantidad total de repertorios identificados y registrados</option>
+                                <option value="33">(Número de acciones articuladas con procesos autoreparadores / Número total de acciones implementadas) × 100</option>
+                                <option value="34">Cantidad total de proyectos ejecutados y documentados</option>
+                                <option value="35">(Número de comunidades con capacidades reconocidas / Número total de comunidades evaluadas) × 100</option>
+                                <option value="36">Cantidad total de territorios donde se ha integrado gestión del riesgo y reivindicaciones</option>
+                                <option value="37">(Área reforestada y suelos recuperados / Meta total de área planificada) × 100</option>
+                                <option value="38">(Número de acciones implementadas / Número total de acciones planificadas) × 100</option>
+                                <option value="39">Cantidad total de convites documentados y ejecutados</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor 2: Actor comunitario -->
+                <div class="form-section">
+                    <h3>II. Actor comunitario asociado a la acción</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="tipoActor">Nombre  asociado a la acción:</label>
+                            <select id="tipoActor" name="tipoActor" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="nivelTerritorial">Persona responsable asociado a la acción:</label>
+                            <select id="nivelTerritorial" name="nivelTerritorial" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="alcance">Función asociada a la actividad  asociado a la acción:</label>
+                            <select id="alcance" name="alcance" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="participacion">Recursos  asociado a la acción:</label>
+                            <select id="participacion" name="participacion" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor 3: Escenario comunitario -->
+                <div class="form-section">
+                    <h3>III. Escenario comunitario o mixto asociada a la acción</h3>
+                    <div class="form-grid">
+                        <div class="coolinput">
+                            <label for="tipoEscenario">Nombre  asociado a la acción:</label>
+                            <select id="tipoEscenario" name="tipoEscenario" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="naturaleza">Tipo de escenario  asociado a la acción:</label>
+                            <select id="naturaleza" name="naturaleza" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="periodicidadEscenario">Funciones asociadas al resultado  asociado a la acción:</label>
+                            <select id="periodicidadEscenario" name="periodicidadEscenario" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="alcanceEscenario">Responsable de Secretaría Ejecutiva  asociado a la acción:</label>
+                            <select id="alcanceEscenario" name="alcanceEscenario" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="participantes">Actores gubernamentales  asociado a la acción:</label>
+                            <select id="participantes" name="participantes" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                        <div class="coolinput">
+                            <label for="resultados">Actotes comunitarios  asociado a la acción:</label>
+                            <select id="resultados" name="resultados" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="resetBtn" class="button button-reset">
+                        <i class='bx bx-reset'></i>
+                        <span>Limpiar campos</span>
+                    </button>
+                    <button type="submit" class="button button-save">
+                        <i class='bx bx-save'></i>
+                        <span>Guardar Registro</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-book-open'></i>
+                        <span>Ir a la documentación del Aplicativo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-group'></i>
+                        <span>Contactar al equipo del desarrollo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-data'></i>
+                        <span>Consultar la base de datos</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>Instituto de estudios políticos</p>
+                    <p>© 2024 Universidad de Antioquia</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script_horizonte_estrategico.js"></script>
+</body>
+</html>

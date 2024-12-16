@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistema de Políticas Públicas - Tablero de Reportes</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_tablero_registro.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>UdeA</h1>
+                <nav>
+                    <button class="nav-btn" id="backButton">
+                        <i class='bx bx-arrow-back'></i>
+                        <span>Volver al Selector</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2>Tablero de Reportes</h2>
+                <p>Sistema de visualización de reportes</p>
+                <div class="filter-section">
+                    <div class="select-wrapper">
+                        <select id="actionSelect" class="action-select">
+                            <option value="">Seleccionar acción...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Sections will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-book-open'></i>
+                        <span>Ir a la documentación del Aplicativo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-group'></i>
+                        <span>Contactar al equipo del desarrollo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-data'></i>
+                        <span>Consultar la base de datos</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>Instituto de estudios políticos</p>
+                    <p>© 2024 Universidad de Antioquia</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script_tablero_registro.js"></script>
+</body>
+</html>

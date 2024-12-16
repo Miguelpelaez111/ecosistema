@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestión de la información - Contexto</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_contexto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>UdeA</h1>
+                <nav class="nav-buttons">
+                    <button class="nav-btn" data-action="selector">
+                        <i class='bx bx-arrow-back'></i>
+                        <span>Volver al Selector</span>
+                    </button>
+                    <button class="nav-btn" data-action="reports">
+                        <i class='bx bx-file'></i>
+                        <span>Ir a Reportes</span>
+                    </button>
+                    <button class="nav-btn" data-action="database">
+                        <i class='bx bx-building-house'></i>
+                        <span>Ir a la base de datos</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="info-card">
+                <h2>Contexto</h2>
+                <h3>Ecosistema de políticas públicas</h3>
+                <p>Señor usuario, Por cada elemento, seleccione la opción requerida</p>
+            </div>
+
+            <form id="conflictForm">
+                <!-- Education Section -->
+                <div class="form-section">
+                    <h3>I. Educación</h3>
+                    <div class="form-grid" id="educationFields"></div>
+                </div>
+
+                <!-- Demographics Section -->
+                <div class="form-section">
+                    <h3>II. Demográficos</h3>
+                    <div class="form-grid" id="demographicsFields"></div>
+                </div>
+
+                <!-- Employment Section -->
+                <div class="form-section">
+                    <h3>III. Empleo</h3>
+                    <div class="form-grid" id="employmentFields"></div>
+                </div>
+
+                <!-- Health Section -->
+                <div class="form-section">
+                    <h3>IV. Salud</h3>
+                    <div class="form-grid" id="healthFields"></div>
+                </div>
+
+                <!-- Poverty Section -->
+                <div class="form-section">
+                    <h3>V. Pobreza</h3>
+                    <div class="form-grid" id="povertyFields"></div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="button button-reset" id="resetBtn">
+                        <i class='bx bx-reset'></i>
+                        <span>Limpiar formulario</span>
+                    </button>
+                    <button type="submit" class="button button-save">
+                        <i class='bx bx-save'></i>
+                        <span>Guardar cambios</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-book-open'></i>
+                        <span>Ir a la documentación del Aplicativo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-group'></i>
+                        <span>Contactar al equipo del desarrollo</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class='bx bx-data'></i>
+                        <span>Consultar la base de datos</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>Instituto de estudios políticos</p>
+                    <p>© 2024 Universidad de Antioquia</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script_contexto.js"></script>
+</body>
+</html>
